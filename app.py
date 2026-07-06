@@ -250,8 +250,6 @@ st.markdown("""
         font-family: 'Material Symbols Rounded', 'Material Icons', sans-serif !important;
     }
 
-    /* ── Hide Streamlit chrome ── */
-    #MainMenu, footer { visibility: hidden; }
 
     /* ── Navigation Buttons ── */
     .stButton > button {
@@ -272,12 +270,13 @@ st.markdown("""
     .main-header h1 {
         font-weight: 700;
         font-size: 2.8rem;
-        color: #1e293b;
+        color: var(--text-color);
         margin: 0;
         letter-spacing: -0.5px;
     }
     .main-header p {
-        color: #64748b;
+        color: var(--text-color);
+        opacity: 0.7;
         font-size: 1.15rem;
         font-weight: 400;
         margin: 0.25rem 0 0;
@@ -287,7 +286,7 @@ st.markdown("""
     .month-title {
         font-size: 1.8rem;
         font-weight: 600;
-        color: #1e293b;
+        color: var(--text-color);
         text-align: center;
         line-height: 2;
     }
@@ -306,7 +305,8 @@ st.markdown("""
         text-align: center;
         font-weight: 500;
         font-size: 1.1rem;
-        color: #64748b;
+        color: var(--text-color);
+        opacity: 0.7;
     }
     .cal-cell {
         padding: 15px 10px;
@@ -390,11 +390,12 @@ st.markdown("""
         margin: 0.8rem 0 0.6rem;
     }
     .stat-card {
-        background: #fff;
+        background: var(--background-color);
         border-radius: 10px;
         padding: 10px 20px;
         text-align: center;
-        border: 1px solid #e2e8f0;
+        border: 1px solid var(--secondary-background-color);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         min-width: 100px;
     }
     .stat-card .stat-num {
@@ -403,27 +404,29 @@ st.markdown("""
     }
     .stat-card .stat-label {
         font-size: 0.72rem;
-        color: #64748b;
+        color: var(--text-color);
+        opacity: 0.7;
         font-weight: 300;
     }
 
     /* ── Detail card ── */
     .detail-card {
-        background: #f8fafc;
+        background: var(--secondary-background-color);
         border-radius: 12px;
         padding: 1.25rem 1.5rem;
         margin: 0.75rem 0;
-        border: 1px solid #e2e8f0;
+        border: none;
     }
     .detail-card h3 {
         margin: 0 0 0.5rem;
-        color: #1e293b;
+        color: var(--text-color);
         font-weight: 500;
         font-size: 1.05rem;
     }
     .detail-card p {
         margin: 0.2rem 0;
-        color: #475569;
+        color: var(--text-color);
+        opacity: 0.8;
         font-size: 0.9rem;
         font-weight: 300;
     }
@@ -432,10 +435,11 @@ st.markdown("""
     .sidebar-title {
         font-weight: 500;
         font-size: 0.92rem;
-        color: #334155;
+        color: var(--text-color);
+        opacity: 0.9;
         margin-bottom: 0.4rem;
         padding-bottom: 0.25rem;
-        border-bottom: 1px solid #e2e8f0;
+        border-bottom: 1px solid var(--secondary-background-color);
     }
     .legend-item {
         display: flex;
@@ -459,20 +463,22 @@ st.markdown("""
     .schedule-tbl th {
         padding: 5px 6px;
         text-align: left;
-        color: #64748b;
+        color: var(--text-color);
+        opacity: 0.8;
         font-weight: 400;
-        border-bottom: 1px solid #e2e8f0;
+        border-bottom: 1px solid var(--secondary-background-color);
     }
     .schedule-tbl td {
         padding: 5px 6px;
-        color: #334155;
-        border-bottom: 1px solid #f1f5f9;
+        color: var(--text-color);
+        opacity: 0.7;
+        border-bottom: 1px solid var(--secondary-background-color);
         font-weight: 300;
     }
 
     .section-divider {
         border: none;
-        border-top: 1px solid #e2e8f0;
+        border-top: 1px solid var(--secondary-background-color);
         margin: 1.5rem 0;
     }
 </style>
