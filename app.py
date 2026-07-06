@@ -394,7 +394,7 @@ st.markdown("""
         border-radius: 10px;
         padding: 10px 20px;
         text-align: center;
-        border: 1px solid var(--secondary-background-color);
+        border: 1px solid rgba(128, 128, 128, 0.2);
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         min-width: 100px;
     }
@@ -415,7 +415,7 @@ st.markdown("""
         border-radius: 12px;
         padding: 1.25rem 1.5rem;
         margin: 0.75rem 0;
-        border: none;
+        border: 1px solid rgba(128, 128, 128, 0.2);
     }
     .detail-card h3 {
         margin: 0 0 0.5rem;
