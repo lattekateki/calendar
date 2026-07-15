@@ -63,7 +63,9 @@ SUMMER_2026_SCHEDULE = {
 SEM1_2027_SCHEDULE = {
     1: [
         {"code": "DADS6005", "name": "DADS6005", "time": "10:00 - 12:00"},
-        {"code": "DADS7202", "name": "DADS7202", "time": "14:00 - 16:00"},
+    ],
+    2: [
+        {"code": "DADS7102", "name": "DADS7102", "time": "14:00 - 16:00"},
     ],
     3: [
         {"code": "DADS6004", "name": "DADS6004", "time": "10:00 - 12:00"},
